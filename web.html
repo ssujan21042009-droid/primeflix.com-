@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CineFree – Public Domain Movies</title>
+  <style>
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#0f172a;color:#e5e7eb}
+    header{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;background:#020617;position:sticky;top:0}
+    .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:20px}
+    .logo svg{width:36px;height:36px}
+    nav a{color:#cbd5f5;margin-left:16px;text-decoration:none}
+    .hero{padding:48px 24px;text-align:center;background:linear-gradient(135deg,#020617,#0f172a)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;padding:24px}
+    .card{background:#020617;border-radius:14px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.3)}
+    .card iframe{width:100%;height:220px;border:0}
+    .card .info{padding:12px}
+    .tag{display:inline-block;padding:4px 8px;border-radius:999px;background:#1e293b;font-size:12px}
+    footer{text-align:center;padding:24px;color:#94a3b8}
+  </style>
+</head>
+<body>
+<header>
+  <div class="logo">
+    <!-- FREE SVG LOGO -->
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#6366f1"/>
+          <stop offset="1" stop-color="#22d3ee"/>
+        </linearGradient>
+      </defs>
+      <circle cx="50" cy="50" r="46" fill="url(#g)"/>
+      <polygon points="40,30 70,50 40,70" fill="#020617"/>
+    </svg>
+    CineFree
+  </div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#movies">Movies</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Watch Public Domain Movies – 100% Free & Legal</h1>
+  <p>No sign‑up. No piracy. Stream classics hosted on Internet Archive.</p>
+</section>
+
+<section id="movies" class="grid">
+  <!-- Public Domain Movies (Internet Archive embeds) -->
+  <div class="card">
+    <iframe src="https://archive.org/embed/night_of_the_living_dead" allowfullscreen></iframe>
+    <div class="info"><strong>Night of the Living Dead (1968)</strong><br><span class="tag">Horror</span></div>
+  </div>
+  <div class="card">
+    <iframe src="https://archive.org/embed/HisGirlFriday" allowfullscreen></iframe>
+    <div class="info"><strong>His Girl Friday (1940)</strong><br><span class="tag">Comedy</span></div>
+  </div>
+  <div class="card">
+    <iframe src="https://archive.org/embed/Charade_201711" allowfullscreen></iframe>
+    <div class="info"><strong>Charade (1963)</strong><br><span class="tag">Thriller</span></div>
+  </div>
+</section>
+
+<section id="about" class="hero">
+  <h2>About CineFree</h2>
+  <p>This site streams only public‑domain movies. You can add more by embedding legal sources.</p>
+</section>
+
+<footer>
+  © 2025 CineFree • Free & Legal Streaming
+</footer>
+</body>
+</html>
